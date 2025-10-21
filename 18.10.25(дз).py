@@ -38,8 +38,10 @@
     # **
     # ***
     # ****
-for i in range (3,-1,-1): #(3,0,-1)
-    print("*"* (4-i) + " "*i)
+for i in range (1,5):
+    for j in range (4,-1,-1):
+        print("*"*i+" "*j)
+        break
 
 
 
