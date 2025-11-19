@@ -63,8 +63,12 @@
 fantasy_readers = {"Игорь", "Катя", "Лев", "Марина"}
 detectivereaders = {"Катя", "Лев", "Никита", "Ольга"}
 sci_fi_readers = {"Лев", "Марина", "Никита", "Павел"}
-
-
+print(fantasy_readers & detectivereaders & sci_fi_readers)
+print(fantasy_readers-(detectivereaders | sci_fi_readers))
+v = fantasy_readers & detectivereaders
+x = fantasy_readers & sci_fi_readers
+y = detectivereaders & sci_fi_readers
+print((v |x | y)-(fantasy_readers & detectivereaders & sci_fi_readers) )
 
 
 
